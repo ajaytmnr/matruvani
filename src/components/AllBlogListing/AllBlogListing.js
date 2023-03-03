@@ -26,7 +26,12 @@ function AllBlogListing() {
         <div className="row">
           <div className="col-12">
             <h2>Recent Blogs</h2>
+            <ul class="breadcrumb">
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/blogs'>Blog</Link></li>
+          </ul>
           </div>
+          
           {
             loading ? <>loading...</> :
               <>
@@ -40,10 +45,6 @@ function AllBlogListing() {
                     return (
 
                       <div className="col-md-6 col-lg-4 pb-4">
-                        <ul class="breadcrumb">
-                          <li><Link to='/'>Home</Link></li>
-                          <li><Link to='/blogs'>Blog</Link></li>
-                        </ul>
                         <Link to={`/blog/${blogDetailsId}`}>
                           <img src={blogImageUrl} alt="" width='100%' />
                           <div className="outer-box">
