@@ -1,4 +1,3 @@
-import blogImageUrl from '../../assets/blogImage.jpg';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
